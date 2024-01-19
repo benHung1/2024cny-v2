@@ -716,8 +716,11 @@ let app = {
   updated() {},
 
   beforeDestroy() {
-    // window.removeEventListener("scroll", this.handleScroll);
     window.removeEventListener("resize", this.checkScreenWidth);
+  },
+
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
 };
 
