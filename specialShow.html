@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="title"
+      content="過年特別節目線上看|好運龍來！開運過好年 | 三立新聞網 SETN.COM"
+    />
+    <meta
+      name="description"
+      content="龍來賀新春！最精彩的過年特別節目，讓你放假也不無聊！2024農曆春節連假，快到《三立新聞網》登入會員玩遊戲，限定好禮送給你，讓你龍年開運Happy一整年！"
+    />
+    <meta
+      name="Keywords"
+      content="龍年,龍年2024,過年,過年 2024,農曆春節,春節,春節連假,2024春節,2024春節連假,2024過年,農曆春節2024,農曆新年2024,農曆新年,農曆年,龍年運勢,龍年運程,龍年紅包,過年活動,春節活動,抽獎活動,活動,三立新聞網"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="過年特別節目線上看|好運龍來！開運過好年 | 三立新聞網 SETN.COM"
+    />
+    <meta
+      property="og:description"
+      content="龍來賀新春！最精彩的過年特別節目，讓你放假也不無聊！2024農曆春節連假，快到《三立新聞網》登入會員玩遊戲，限定好禮送給你，讓你龍年開運Happy一整年！"
+    />
+    <meta
+      property="og:image"
+      content="https://acts.setn.com/event/2024cny/imgs/FbSharepicture.png"
+    />
+    <meta property="og:url" content="https://acts.setn.com/event/2024cny" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>過年特別節目線上看|好運龍來！開運過好年 | 三立新聞網 SETN.COM</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/specialShow.css" />
+
+    <script src="./js/vue.min.js"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NZ3723M");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Begin comScore Tag -->
+    <script>
+      var _comscore = _comscore || [];
+      _comscore.push({ c1: "2", c2: "20617561" });
+      (function () {
+        var s = document.createElement("script"),
+          el = document.getElementsByTagName("script")[0];
+        s.async = true;
+        s.src =
+          (document.location.protocol == "https:" ? "https://sb" : "http://b") +
+          ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+      })();
+    </script>
+    <!-- End comScore Tag -->
+  </head>
+
+  <body>
+    <div id="app" v-cloak>
+      <h1 class="google-text">好運龍來 | 開運過好年 | 2024</h1>
+
+      <div class="share_bt">
+        <ul>
+          <li>
+            <a
+              class="fb-share-btn"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://acts.setn.com/event/2024cny/index.html"
+              target="_blank"
+              title="Facebook分享"
+            >
+              <img
+                class="fb-share"
+                src="./imgs/fbshareicon.png"
+                alt="fbshareicon"
+                srcset="./imgs/facebook@2x.png 2x, ./imgs/facebook@3x.png 3x"
+              />
+              <img
+                class="fb-share-1"
+                src="./imgs/fb-share-1.png"
+                alt="fbshareicon"
+                srcset="
+                  ./imgs/fb-share-1@2x.png 2x,
+                  ./imgs/fb-share-1@3x.png 3x
+                "
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="line-share-btn"
+              href="https://social-plugins.line.me/lineit/share?url=https://acts.setn.com/event/2024cny/index.html"
+              target="_blank"
+              title="Line分享"
+            >
+              <img
+                class="line-share"
+                src="./imgs/shareICON.png"
+                alt="shareICON"
+                srcset="./imgs/shareICON@2x.png 2x, ./imgs/shareICON@3x.png 3x"
+              />
+
+              <img
+                class="line-share-1"
+                src="./imgs/line-share-1.png"
+                alt="shareICON"
+                srcset="
+                  ./imgs/line-share-1@2x.png 2x,
+                  ./imgs/line-share-1@3x.png 3x
+                "
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="toTop toTop-wrapper">
+        <img
+          class="toTopBtn"
+          @click="toTop"
+          v-if="!isAtTop"
+          src="./imgs/top.png"
+          alt="fbshareicon"
+          srcset="./imgs/top@2x.png 2x, ./imgs/top@3x.png 3x"
+        />
+
+        <img
+          class="toTop top-1"
+          @click="toTop"
+          v-if="!isAtTop"
+          src="./imgs/top-1.png"
+          alt="fbshareicon"
+          srcset="./imgs/top-1@2x.png 2x, ./imgs/top-1@3x.png 3x"
+        />
+      </div>
+
+      <!-- Menu Start -->
+      <nav class="menu-block">
+        <a href="https://www.setn.com" target="_blank">
+          <img
+            class="logo"
+            src="./imgs/SETN.png"
+            alt="logo"
+            srcset="./imgs/SETN@2x.png 2x, ./imgs/SETN@3x.png 3x"
+            v-if="!isMobile"
+          />
+        </a>
+        <ul class="menu-area" v-if="!isMobile">
+          <li>
+            <a href="index.html">活動首頁</a>
+          </li>
+          <li>
+            <a href="spinToWin.html">幸運大轉盤</a>
+          </li>
+          <li>
+            <a href="redEnvelope.html">好運從天降</a>
+          </li>
+          <li><a href="drawLots.html">財運滾滾來</a></li>
+          <li><a href="specialShow.html" class="active">過年特別節目</a></li>
+          <li><a href="festival.html">春節連假攻略</a></li>
+          <li class="loginWrapper">
+            <a @click="login" href="#" class="web-login-btn">
+              <img
+                src="./imgs/avatar.png"
+                alt="avatar"
+                v-if="!isLogin"
+                class="initial-svg"
+                srcset="./imgs/avatar@2x.png 2x, ./imgs/avatar@3x.png 3x"
+              />
+              <img
+                src="./imgs/avatarlogout.png"
+                alt="avatar"
+                srcset="
+                  ./imgs/avatarlogout@2x.png 2x,
+                  ./imgs/avatarlogout@3x.png 3x
+                "
+                class="logout-icon"
+                v-else
+              />
+
+              <!-- hover -->
+
+              <img
+                src="./imgs/avatarhover.png"
+                alt=""
+                class="hover-svg"
+                v-if="!isLogin"
+                srcset="
+                  ./imgs/avatarhover@2x.png 2x,
+                  ./imgs/avatarhover@3x.png 3x
+                "
+              />
+
+              <!-- hover-logout -->
+
+              <img
+                src="./imgs/avatarlogout2.png"
+                alt=""
+                srcset="
+                  ./imgs/avatarlogout2@2x.png 2x,
+                  ./imgs/avatarlogout2@3x.png 3x
+                "
+                class="logout-hover-svg"
+                v-else
+              />
+
+              {{isLogin ? '登出': '登入'}}
+            </a>
+          </li>
+        </ul>
+
+        <div class="mb-login-wrapper" v-if="isMobile">
+          <a href="https://www.setn.com/" target="_blank">
+            <img
+              class="logo"
+              src="./imgs/SETN.png"
+              alt="logo"
+              srcset="./imgs/SETN@2x.png 2x, ./imgs/SETN@3x.png 3x"
+            />
+          </a>
+
+          <a @click="login" href="#" class="mb-aTag">
+            <img
+              src="./imgs/avatar.png"
+              alt="avatar"
+              v-if="!isLogin"
+              class="mb-login-icon"
+              srcset="./imgs/avatar@2x.png 2x, ./imgs/avatar@3x.png 3x"
+            />
+            <img
+              src="./imgs/avatarlogout.png"
+              alt="avatar"
+              srcset="
+                ./imgs/avatarlogout@2x.png 2x,
+                ./imgs/avatarlogout@3x.png 3x
+              "
+              class="mb-logout-icon"
+              v-else
+            />
+
+            <!-- hover -->
+
+            <img
+              src="./imgs/avatarhover.png"
+              alt=""
+              class="mb-hover-svg"
+              v-if="!isLogin"
+              srcset="
+                ./imgs/avatarhover@2x.png 2x,
+                ./imgs/avatarhover@3x.png 3x
+              "
+            />
+
+            <!-- hover-logout -->
+
+            <img
+              src="./imgs/avatarlogout2.png"
+              alt=""
+              srcset="
+                ./imgs/avatarlogout2@2x.png 2x,
+                ./imgs/avatarlogout2@3x.png 3x
+              "
+              class="logout-hover-svg"
+              v-else
+            />
+          </a>
+        </div>
+        <ul class="mb-menu-area" v-if="isMobile">
+          <li>
+            <a href="index.html">
+              <img
+                class="index-icon"
+                src="./imgs/home.png"
+                alt="index-icon"
+                srcset="./imgs/home@2x.png 2x, ./imgs/home@3x.png 3x"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="spinToWin.html">
+              <img
+                class="spinToWin-icon"
+                src="./imgs/lucky-wheel.png"
+                alt="spinToWin-icon"
+                srcset="
+                  ./imgs/lucky-wheel@2x.png 2x,
+                  ./imgs/lucky-wheel@3x.png 3x
+                "
+              />
+            </a>
+          </li>
+          <li>
+            <a href="redEnvelope.html">
+              <img
+                class="redEnvelope"
+                src="./imgs/red-packet.png"
+                alt="redEnvelope"
+                srcset="
+                  ./imgs/red-packet@2x.png 2x,
+                  ./imgs/red-packet@3x.png 3x
+                "
+              />
+            </a>
+          </li>
+          <li>
+            <a href="drawLots.html">
+              <img
+                class="drawLots"
+                src="./imgs/stick-bucket.png"
+                alt="drawLots"
+                srcset="
+                  ./imgs/stick-bucket@2x.png 2x,
+                  ./imgs/stick-bucket@3x.png 3x
+                "
+              />
+            </a>
+          </li>
+          <li>
+            <a href="specialShow.html">
+              <img
+                class="player mb-active"
+                src="./imgs/player.png"
+                alt="player"
+                srcset="./imgs/player@2x.png 2x, ./imgs/player@3x.png 3x"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="festival.html">
+              <img
+                class="idea"
+                src="./imgs/idea.png"
+                alt="idea"
+                srcset="./imgs/idea@2x.png 2x, ./imgs/idea@3x.png 3x"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Menu End -->
+
+      <!-- 主內容 Start -->
+      <div class="container">
+        <section class="dragonWapper">
+          <img
+            src="./imgs/bg2-lanternflower.png"
+            srcset="
+              ./imgs/bg2-lanternflower@2x.png 2x,
+              ./imgs/bg2-lanternflower@3x.png 3x
+            "
+            alt="bg-2"
+            class="bg-2"
+            v-if="!isMobile"
+          />
+          <!-- 煙火 -->
+          <div class="bg-3" v-if="!isMobile">
+            <!-- 這裡的圖片有動畫的話要換掉 -->
+
+            <div class="bg-3-1">
+              <img
+                src="./imgs/fireworks1.png"
+                srcset="
+                  ./imgs/fireworks1@2x.png 2x,
+                  ./imgs/fireworks1@3x.png 3x
+                "
+                alt="bg-3-1"
+              />
+            </div>
+
+            <div class="bg-3-2">
+              <img
+                src="./imgs/fireworks2.png"
+                srcset="
+                  ./imgs/fireworks2@2x.png 2x,
+                  ./imgs/fireworks2@3x.png 3x
+                "
+                alt="bg-3-2"
+              />
+            </div>
+
+            <div class="bg-3-3">
+              <img
+                src="./imgs/fireworks3.png"
+                srcset="
+                  ./imgs/fireworks3@2x.png 2x,
+                  ./imgs/fireworks3@3x.png 3x
+                "
+                alt="bg-3-3"
+              />
+            </div>
+          </div>
+
+          <img
+            src="./imgs/special.png"
+            srcset="./imgs/special@2x.png 2x, ./imgs/special@3x.png 3x"
+            alt="dragon"
+            class="dragon"
+          />
+        </section>
+
+        <section class="video-wrapper">
+          <div class="video-container">
+            <iframe
+              width="900"
+              height="510"
+              src="https://www.youtube.com/embed/videoseries?si=53HkDHeqaqxKb5uQ&amp;list=PLxhUsq3CF77i_TKHd09w32GdsmLP7X1lx"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="sub-group">
+            <a
+              class="sub-group-wrapper"
+              target="_blank"
+              href="https://www.youtube.com/channel/UC4twJx3tfIIdmnC_zsuP45Q"
+            >
+              <img
+                class="SubscribeBall1"
+                src="./imgs/SubscribeBtn01.png"
+                alt="SubscribeBtn01"
+                srcset="
+                  ./imgs/SubscribeBtn01@2x.png 2x,
+                  ./imgs/SubscribeBtn01@3x.png 3x
+                "
+              />
+
+              <img
+                class="subc-btn"
+                src="./imgs/subc-btn.png"
+                alt="SubscribeBtn01"
+                srcset="./imgs/subc-btn@2x.png 2x, ./imgs/subc-btn@3x.png 3x"
+              />
+
+              <img
+                class="cursor-btn"
+                src="./imgs/cursor.png"
+                alt="SubscribeBtn01"
+                srcset="./imgs/cursor@2x.png 2x, ./imgs/cursor@3x.png 3x"
+              />
+            </a>
+
+            <a
+              class="sub-group-wrapper2"
+              target="_blank"
+              href="https://www.youtube.com/@onedayfighting"
+            >
+              <img
+                class="SubscribeBall2"
+                src="./imgs/SubscribeBtn02.png"
+                alt="SubscribeBtn02"
+                srcset="
+                  ./imgs/SubscribeBtn02@2x.png 2x,
+                  ./imgs/SubscribeBtn02@3x.png 3x
+                "
+              />
+
+              <img
+                class="subc-btn"
+                src="./imgs/subc-btn.png"
+                alt="SubscribeBtn01"
+                srcset="./imgs/subc-btn@2x.png 2x, ./imgs/subc-btn@3x.png 3x"
+              />
+
+              <img
+                class="cursor-btn"
+                src="./imgs/cursor.png"
+                alt="SubscribeBtn01"
+                srcset="./imgs/cursor@2x.png 2x, ./imgs/cursor@3x.png 3x"
+              />
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <!-- footer Start -->
+      <footer>
+        <div class="copyrightbox">
+          ©2024 Sanlih E-Television All Rights Reserved
+          <p class="copyright">版權所有 盜用必究</p>
+        </div>
+      </footer>
+      <!-- footer End -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
